@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Keiner Posada - Desarrollador Web Full Stack">
+    <title>Keiner Posada | Desarrollador Web Full Stack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVBAR FIJA
+    ========================================= -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <span class="logo-mark">KP</span>
+                <span class="logo-text"><strong>Keiner</strong> Posada</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener"
+                    class="nav-link">GitHub</a>
+                <a href="#contacto" class="nav-link nav-cta">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="particle p1"></div>
+            <div class="particle p2"></div>
+            <div class="particle p3"></div>
+            <div class="particle p4"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="hero-tag">Disponible para nuevos proyectos</span>
+                <h1 class="hero-title"><span class="text-gradient">Keiner Posada</span></h1>
+                <h2 class="hero-role">Desarrollador Web Full Stack</h2>
+                <p class="hero-message">Diseño y construyo experiencias web rápidas, accesibles y memorables. Convierto
+                    ideas en productos digitales que generan resultados reales.</p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary">Contáctame</a>
+                    <a href="#proyectos" class="btn btn-ghost">Ver proyectos</a>
+                    <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener"
+                        class="btn btn-ghost btn-github">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path
+                                d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                        </svg>
+                        Ver GitHub
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>3</strong><span>Proyectos reales</span></div>
+                    <div class="stat"><strong>+1</strong><span>Año de experiencia</span></div>
+                    <div class="stat"><strong>100%</strong><span>Clientes satisfechos</span></div>
+                </div>
+            </div>
+
+            <!-- AVATAR ANIMADO SVG -->
+            <div class="hero-visual reveal">
+                <div class="photo-frame">
+                    <div class="photo-glow"></div>
+                    <!-- Avatar ilustrado animado con laptop y código -->
+                    <img src="img/avatar_keiner.png" alt="Avatar de Keiner Posada - Desarrollador Full Stack"
+                        class="profile-photo avatar-img">
+                    <!-- =====================================================
+                         ¿QUIERES PONER TU FOTO REAL?
+                         1. Guarda tu foto en la misma carpeta: foto-perfil.jpg
+                         2. Cambia: src="avatar.svg" por src="foto-perfil.jpg"
+                         ===================================================== -->
+                    <div class="float-badge badge-available"><span class="badge-dot"></span>Disponible</div>
+                    <div class="float-badge badge-stack"><span>⚡</span> Full Stack Dev</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SOBRE MÍ
+    ========================================= -->
+    <section class="section about" id="sobre-mi">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">01 — Sobre mí</span>
+                <h2 class="section-title">Un desarrollador apasionado por <span class="text-gradient">crear
+                        soluciones</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>Soy un desarrollador Full Stack con más de 1 año de experiencia construyendo aplicaciones web
+                        modernas. Disfruto resolver problemas complejos con código limpio, escalable y orientado al
+                        usuario.</p>
+                    <p>He trabajado con proyectos y clientes independientes, ayudándoles a llevar sus ideas desde un
+                        prototipo hasta producto en producción. Creo firmemente que el buen diseño y el buen código van
+                        de la mano.</p>
+                    <h3 class="about-subtitle">Tecnologías que uso</h3>
+                    <div class="tech-chips">
+                        <span class="chip">HTML5</span><span class="chip">CSS3</span><span
+                            class="chip">JavaScript</span>
+                        <span class="chip">Git</span><span class="chip">Python</span><span class="chip">MySQL</span>
+                        <span class="chip">FastAPI</span><span class="chip">Flask</span>
+                    </div>
+                    <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener"
+                        class="btn btn-ghost github-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path
+                                d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                        </svg>
+                        Ver mi GitHub
+                    </a>
+                </div>
+                <div class="about-skills reveal">
+                    <h3 class="about-subtitle">Habilidades técnicas</h3>
+                    <div class="skill">
+                        <div class="skill-head"><span>Frontend (HTML, CSS, JS)</span><span>95%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-fill="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>Backend (APIs REST, FastAPI, Python)</span><span>90%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-fill="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>Bases de datos (SQL, MySQL)</span><span>85%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-fill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>UI/UX & Diseño Responsivo</span><span>88%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-fill="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head"><span>DevOps & Despliegue</span><span>75%</span></div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-fill="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SERVICIOS
+    ========================================= -->
+    <section class="section services" id="servicios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">02 — Servicios</span>
+                <h2 class="section-title">Lo que puedo hacer <span class="text-gradient">por ti</span></h2>
+                <p class="section-sub">Soluciones a medida diseñadas para hacer crecer tu negocio en internet.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h18v18H3z" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web a medida, rápidos y optimizados para SEO. Desde landing pages hasta aplicaciones
+                        complejas con paneles de administración.</p>
+                    <ul class="service-list">
+                        <li>Landing pages</li>
+                        <li>E-commerce</li>
+                        <li>Web apps</li>
+                    </ul>
+                </article>
+                <article class="service-card featured reveal">
+                    <span class="service-badge">Más solicitado</span>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" />
+                        </svg>
+                    </div>
+                    <h3>Diseño UI/UX</h3>
+                    <p>Interfaces limpias, intuitivas y centradas en el usuario. Prototipos y entrega lista para
+                        desarrollo o implementación directa.</p>
+                    <ul class="service-list">
+                        <li>Wireframes & prototipos</li>
+                        <li>Sistemas de diseño</li>
+                        <li>Tests de usabilidad</li>
+                    </ul>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 17l6-6 4 4 6-6" />
+                            <path d="M14 7h6v6" />
+                        </svg>
+                    </div>
+                    <h3>APIs & Backend</h3>
+                    <p>Diseño e implementación de APIs REST con Python/FastAPI, bases de datos eficientes y
+                        arquitecturas escalables.</p>
+                    <ul class="service-list">
+                        <li>APIs REST con FastAPI</li>
+                        <li>Autenticación JWT</li>
+                        <li>Integraciones</li>
+                    </ul>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
+                        </svg>
+                    </div>
+                    <h3>Optimización & SEO</h3>
+                    <p>Mejora del rendimiento, accesibilidad y posicionamiento de tu sitio actual. Sitios más rápidos
+                        venden y posicionan mejor.</p>
+                    <ul class="service-list">
+                        <li>Auditoría técnica</li>
+                        <li>Core Web Vitals</li>
+                        <li>SEO on-page</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROYECTOS REALES
+    ========================================= -->
+    <section class="section projects" id="proyectos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">03 — Portafolio</span>
+                <h2 class="section-title">Proyectos <span class="text-gradient">reales</span></h2>
+                <p class="section-sub">Aplicaciones que construí y están funcionando en producción.</p>
+            </div>
+            <div class="projects-grid">
+
+                <!-- CINE -->
+                <article class="project-card reveal">
+                    <a href="https://sistema-web-para-gesti-n-de-cine.vercel.app/" target="_blank" rel="noopener"
+                        class="project-image-link">
+                        <div class="project-image">
+                            <img src="img/Sistema_Cine.png" alt="Sistema de Gestión de Cine - CineMax"
+                                class="project-img">
+                            <div class="project-overlay"><span class="overlay-btn">Ver proyecto →</span></div>
+                        </div>
+                    </a>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>MAILJET</span><span>MySQL</span><span>Flask</span><span>Python</span>
+                        </div>
+                        <h3><a href="https://sistema-web-para-gesti-n-de-cine.vercel.app/" target="_blank"
+                                rel="noopener">CineMax — Sistema de Gestión de Cine</a></h3>
+                        <p>Plataforma web para gestión de cartelera con registro, inicio de sesión y visualización de
+                            películas con horarios en tiempo real.</p>
+                        <div class="project-links">
+                            <a href="https://sistema-web-para-gesti-n-de-cine.vercel.app/" target="_blank"
+                                rel="noopener" class="project-link">Ver demo en vivo →</a>
+                            <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener"
+                                class="project-link project-link-gh">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                    <path
+                                        d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                                </svg> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PARQUEADERO -->
+                <article class="project-card reveal">
+                    <a href="https://sistema-parqueadero-olive.vercel.app/" target="_blank" rel="noopener"
+                        class="project-image-link">
+                        <div class="project-image">
+                            <img src="img/Parqueadero.png" alt="Sistema de Gestión de Parqueadero - ParkingSystem"
+                                class="project-img">
+                            <div class="project-overlay"><span class="overlay-btn">Ver proyecto →</span></div>
+                        </div>
+                    </a>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>Node.js</span><span>Express</span><span>MySQL</span><span>JWT</span>
+                        </div>
+                        <h3><a href="https://sistema-parqueadero-olive.vercel.app/" target="_blank"
+                                rel="noopener">ParkingSystem — Gestión de Parqueadero</a></h3>
+                        <p>Sistema inteligente en tiempo real para parqueaderos. Controla ingresos, salidas y genera
+                            reportes detallados al instante con panel administrativo.</p>
+                        <div class="project-links">
+                            <a href="https://sistema-parqueadero-olive.vercel.app/" target="_blank" rel="noopener"
+                                class="project-link">Ver demo en vivo →</a>
+                            <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener"
+                                class="project-link project-link-gh">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                    <path
+                                        d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                                </svg> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- GRANJA -->
+                <article class="project-card reveal">
+                    <a href="https://manjares-e-commerce.vercel.app/" target="_blank" rel="noopener"
+                        class="project-image-link">
+                        <div class="project-image">
+                            <img src="img/Granja_virtual.png" alt="E-commerce Manjares - Tienda de Granja"
+                                class="project-img">
+                            <div class="project-overlay"><span class="overlay-btn">Ver proyecto →</span></div>
+                        </div>
+                    </a>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span>REACT</span><span>FASTAPI</span><span>MySQL</span><span>TAILWIND</span>
+                        </div>
+                        <h3><a href="https://manjares-e-commerce.vercel.app/" target="_blank" rel="noopener">Manjares —
+                                E-commerce de Granja</a></h3>
+                        <p>Tienda virtual de productos de granja con catálogo, carrito de compras y sistema de pedidos.
+                            Diseño moderno y experiencia de usuario fluida.</p>
+                        <div class="project-links">
+                            <a href="https://manjares-e-commerce.vercel.app/" target="_blank" rel="noopener"
+                                class="project-link">Ver demo en vivo →</a>
+                            <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener"
+                                class="project-link project-link-gh">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                    <path
+                                        d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                                </svg> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <div class="projects-footer reveal">
+                <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener" class="btn btn-ghost">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                        <path
+                            d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                    </svg>
+                    Ver todos mis repositorios en GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIOS
+    ========================================= -->
+    <section class="section testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-eyebrow">04 — Testimonios</span>
+                <h2 class="section-title">Lo que dicen <span class="text-gradient">mis clientes</span></h2>
+                <p class="section-sub">Experiencias de personas que confiaron en mi trabajo.</p>
+            </div>
+            <div class="testimonials-grid">
+                <figure class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Keiner entregó el proyecto exactamente como lo pedí, en el tiempo acordado y con un
+                        diseño que superó mis expectativas. Muy profesional y siempre atento a cada detalle."
+                    </blockquote>
+                    <figcaption>
+                        <div class="avatar" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);">JM</div>
+                        <div><strong>Juan Martínez</strong><span>Cliente — Landing Page</span></div>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Contraté a Keiner para desarrollar la web de mi negocio y quedé muy satisfecha. El
+                        sitio quedó bonito, carga rápido y me enseñó cómo actualizarlo. Lo recomiendo al 100%."
+                    </blockquote>
+                    <figcaption>
+                        <div class="avatar" style="background:linear-gradient(135deg,#ec4899,#f97316);">SP</div>
+                        <div><strong>Sara Pérez</strong><span>Cliente — Sitio Web para Negocio</span></div>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <blockquote>"Necesitaba una API para mi aplicación y Keiner la construyó de manera limpia y bien
+                        documentada. La comunicación fue excelente durante todo el proceso."</blockquote>
+                    <figcaption>
+                        <div class="avatar" style="background:linear-gradient(135deg,#10b981,#06b6d4);">CR</div>
+                        <div><strong>Carlos Ramos</strong><span>Cliente — API REST</span></div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACTO — WEB3FORMS
+         Correo configurado: keinerposada0402@gmail.com
+         Access Key activa: ee999815-af17-45de-94a0-e33548ea93aa
+    ========================================= -->
+    <section class="section contact" id="contacto">
+        <div class="container contact-container">
+            <div class="contact-info reveal">
+                <span class="section-eyebrow">05 — Contacto</span>
+                <h2 class="section-title">¿Tienes un proyecto <span class="text-gradient">en mente?</span></h2>
+                <p>Cuéntame brevemente sobre tu idea o necesidad y te responderé en menos de 24 horas. Sin compromiso,
+                    sin vueltas.</p>
+                <ul class="contact-list">
+                    <li><span class="contact-ico">✉</span><a
+                            href="mailto:keinerposada0402@gmail.com">keinerposada0402@gmail.com</a></li>
+                    <li><span class="contact-ico">⌖</span>Colombia (Remoto a todo el mundo)</li>
+                    <li>
+                        <span class="contact-ico">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                                <path
+                                    d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                            </svg>
+                        </span>
+                        <a href="https://github.com/keinerposada0402-afk" target="_blank"
+                            rel="noopener">github.com/keinerposada0402-afk</a>
+                    </li>
+                </ul>
+                <div class="socials">
+                    <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener" aria-label="GitHub"
+                        class="social">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5V9h3v10zM6.5 7.7a1.7 1.7 0 110-3.4 1.7 1.7 0 010 3.4zM19 19h-3v-5c0-1.2-.4-2-1.5-2s-1.7.7-1.7 2v5h-3V9h3v1.4c.4-.7 1.5-1.6 3-1.6 2.2 0 3.2 1.4 3.2 4V19z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:keinerposada0402@gmail.com" aria-label="Email" class="social">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ===================================================
+                 FORMULARIO WEB3FORMS — YA CONFIGURADO Y FUNCIONAL
+                 Los mensajes llegan a: keinerposada0402@gmail.com
+                 NO cambies el access_key ni el subject hidden
+                 =================================================== -->
+            <form class="contact-form reveal" id="contactForm" novalidate>
+                <!-- Access Key Web3Forms — NO borrar -->
+                <input type="hidden" name="access_key" value="ee999815-af17-45de-94a0-e33548ea93aa">
+                <!-- Asunto que verás en Gmail -->
+                <input type="hidden" name="subject" value="Nuevo mensaje desde tu Portafolio — Keiner Posada">
+                <!-- Anti-spam — NO borrar -->
+                <input type="checkbox" name="botcheck" style="display:none">
+
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    <small class="form-error" id="errName"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                    <small class="form-error" id="errEmail"></small>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject_user" placeholder="¿De qué quieres hablar?" required>
+                    <small class="form-error" id="errSubject"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..."
+                        required></textarea>
+                    <small class="form-error" id="errMessage"></small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Enviar mensaje</button>
+                <div class="form-success" id="formSuccess">✓ ¡Gracias! Tu mensaje llegó a keinerposada0402@gmail.com —
+                    te respondo pronto.</div>
+                <div class="form-error-msg" id="formError">✗ Error al enviar. Escríbeme directamente a
+                    keinerposada0402@gmail.com</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <span class="logo-mark">KP</span>
+                    <span class="logo-text">Keiner<strong>.dev</strong></span>
+                </a>
+                <p>Desarrollador Web Full Stack creando productos digitales con propósito.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a>
+                <a href="#servicios">Servicios</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <a href="mailto:keinerposada0402@gmail.com">keinerposada0402@gmail.com</a>
+                <a href="https://github.com/keinerposada0402-afk" target="_blank" rel="noopener">GitHub</a>
+                <a href="#">Colombia (Remoto)</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="year"></span> Keiner Posada. Todos los derechos reservados.</p>
+            <p>Diseñado y desarrollado con ♥ desde Colombia.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

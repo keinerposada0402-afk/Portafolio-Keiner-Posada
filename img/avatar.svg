@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Gradiente principal del fondo circular -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a2333"/>
+      <stop offset="100%" stop-color="#0b0f17"/>
+    </radialGradient>
+    <!-- Gradiente del cuerpo/ropa -->
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <!-- Gradiente piel -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5c5a3"/>
+      <stop offset="100%" stop-color="#e8a882"/>
+    </linearGradient>
+    <!-- Gradiente del borde del círculo -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <!-- Filtro sombra suave -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#6366f1" flood-opacity="0.3"/>
+    </filter>
+    <!-- Recorte circular -->
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="178"/>
+    </clipPath>
+  </defs>
+
+  <!-- Borde animado con gradiente -->
+  <circle cx="200" cy="200" r="195" fill="none" stroke="url(#borderGrad)" stroke-width="4" opacity="0.8">
+    <animate attributeName="stroke-dasharray" values="0 1220;1220 0;0 1220" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-dashoffset" values="0;-1220" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="200" r="185" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Fondo interior -->
+  <circle cx="200" cy="200" r="178" fill="url(#bgGrad)" clip-path="url(#circleClip)"/>
+
+  <!-- Destellos de fondo decorativos -->
+  <circle cx="120" cy="120" r="60" fill="#6366f1" opacity="0.06" clip-path="url(#circleClip)"/>
+  <circle cx="290" cy="280" r="70" fill="#ec4899" opacity="0.06" clip-path="url(#circleClip)"/>
+
+  <!-- Grupo principal del personaje con animación sutil de flotación -->
+  <g clip-path="url(#circleClip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1;0.4 0 0.2 1"/>
+
+      <!-- CUERPO / CAMISA -->
+      <ellipse cx="200" cy="340" rx="80" ry="55" fill="url(#bodyGrad)"/>
+      <!-- Cuello de la camisa -->
+      <rect x="185" y="285" width="30" height="30" rx="4" fill="url(#bodyGrad)"/>
+      <!-- Detalle solapa izquierda -->
+      <polygon points="185,285 175,310 195,310" fill="#4f46e5"/>
+      <!-- Detalle solapa derecha -->
+      <polygon points="215,285 225,310 205,310" fill="#4f46e5"/>
+
+      <!-- CUELLO -->
+      <ellipse cx="200" cy="285" rx="18" ry="14" fill="url(#skinGrad)"/>
+
+      <!-- CABEZA -->
+      <ellipse cx="200" cy="220" rx="62" ry="68" fill="url(#skinGrad)" filter="url(#shadow)"/>
+
+      <!-- OREJAS -->
+      <ellipse cx="140" cy="222" rx="12" ry="15" fill="url(#skinGrad)"/>
+      <ellipse cx="260" cy="222" rx="12" ry="15" fill="url(#skinGrad)"/>
+      <!-- Interior oreja -->
+      <ellipse cx="140" cy="222" rx="7" ry="9" fill="#e8a882"/>
+      <ellipse cx="260" cy="222" rx="7" ry="9" fill="#e8a882"/>
+
+      <!-- CABELLO — estilo moderno oscuro -->
+      <ellipse cx="200" cy="168" rx="62" ry="32" fill="#1a1a2e"/>
+      <ellipse cx="200" cy="160" rx="58" ry="24" fill="#1a1a2e"/>
+      <!-- Mechones laterales -->
+      <ellipse cx="145" cy="185" rx="18" ry="28" fill="#1a1a2e"/>
+      <ellipse cx="255" cy="185" rx="18" ry="28" fill="#1a1a2e"/>
+      <!-- Mechón frontal con reflejo -->
+      <path d="M175,162 Q200,148 225,162 Q215,170 200,168 Q185,170 175,162Z" fill="#2d2d4e"/>
+
+      <!-- CEJAS expresivas -->
+      <path d="M168,200 Q180,194 192,198" stroke="#2d1b00" stroke-width="4" fill="none" stroke-linecap="round"/>
+      <path d="M208,198 Q220,194 232,200" stroke="#2d1b00" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+      <!-- OJOS con brillo -->
+      <!-- Ojo izquierdo -->
+      <ellipse cx="180" cy="215" rx="12" ry="13" fill="white"/>
+      <ellipse cx="180" cy="216" rx="8" ry="9" fill="#1a1a2e"/>
+      <ellipse cx="180" cy="216" rx="5" ry="6" fill="#2d2d6e"/>
+      <circle cx="183" cy="213" r="2.5" fill="white"/>
+      <!-- Ojo derecho -->
+      <ellipse cx="220" cy="215" rx="12" ry="13" fill="white"/>
+      <ellipse cx="220" cy="216" rx="8" ry="9" fill="#1a1a2e"/>
+      <ellipse cx="220" cy="216" rx="5" ry="6" fill="#2d2d6e"/>
+      <circle cx="223" cy="213" r="2.5" fill="white"/>
+
+      <!-- Pestañas -->
+      <path d="M170,207 L168,202 M174,205 L173,200 M178,204 L178,199" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M210,205 L209,200 M214,204 L214,199 M218,205 L220,200" stroke="#1a1a2e" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- NARIZ -->
+      <path d="M197,228 Q200,235 203,228" stroke="#c4956a" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="194" cy="230" rx="3" ry="2" fill="#c4956a" opacity="0.5"/>
+      <ellipse cx="206" cy="230" rx="3" ry="2" fill="#c4956a" opacity="0.5"/>
+
+      <!-- BOCA — sonrisa amigable -->
+      <path d="M186,248 Q200,260 214,248" stroke="#8b4513" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <!-- Dientes -->
+      <path d="M191,249 Q200,256 209,249 Q200,252 191,249Z" fill="white" opacity="0.8"/>
+      <!-- Hoyuelo mejillas -->
+      <circle cx="170" cy="242" r="5" fill="#e8967a" opacity="0.3"/>
+      <circle cx="230" cy="242" r="5" fill="#e8967a" opacity="0.3"/>
+
+      <!-- BRAZOS -->
+      <ellipse cx="130" cy="330" rx="20" ry="40" fill="url(#bodyGrad)" transform="rotate(-15,130,330)"/>
+      <ellipse cx="270" cy="330" rx="20" ry="40" fill="url(#bodyGrad)" transform="rotate(15,270,330)"/>
+      <!-- Manos -->
+      <ellipse cx="118" cy="358" rx="16" ry="13" fill="url(#skinGrad)" transform="rotate(-15,118,358)"/>
+      <ellipse cx="282" cy="358" rx="16" ry="13" fill="url(#skinGrad)" transform="rotate(15,282,358)"/>
+    </g>
+
+    <!-- LAPTOP / código en manos — efecto tech -->
+    <g opacity="0.9">
+      <rect x="155" y="355" width="90" height="55" rx="5" fill="#0d1117" stroke="#6366f1" stroke-width="1.5"/>
+      <rect x="160" y="360" width="80" height="42" rx="3" fill="#161b22"/>
+      <!-- Líneas de código animadas -->
+      <rect x="165" y="366" width="35" height="3" rx="1.5" fill="#6366f1" opacity="0.9"/>
+      <rect x="165" y="373" width="55" height="3" rx="1.5" fill="#8b5cf6" opacity="0.8"/>
+      <rect x="165" y="380" width="25" height="3" rx="1.5" fill="#ec4899" opacity="0.8"/>
+      <rect x="165" y="387" width="45" height="3" rx="1.5" fill="#06b6d4" opacity="0.8">
+        <animate attributeName="width" values="45;70;45" dur="2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="165" y="394" width="20" height="3" rx="1.5" fill="#6366f1" opacity="0.7"/>
+      <!-- Cursor parpadeante -->
+      <rect x="188" y="394" width="2" height="3" rx="1" fill="white">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+      <!-- Base laptop -->
+      <rect x="148" y="408" width="104" height="6" rx="3" fill="#1f2937" stroke="#6366f1" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Partículas flotantes decorativas externas -->
+  <circle cx="50" cy="80" r="4" fill="#6366f1" opacity="0.6">
+    <animate attributeName="cy" values="80;60;80" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="100" r="3" fill="#ec4899" opacity="0.5">
+    <animate attributeName="cy" values="100;80;100" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="300" r="5" fill="#8b5cf6" opacity="0.4">
+    <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="320" r="3" fill="#06b6d4" opacity="0.5">
+    <animate attributeName="cy" values="320;300;320" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Estrellitas -->
+  <text x="38" y="200" font-size="14" fill="#6366f1" opacity="0.5">✦
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </text>
+  <text x="355" y="200" font-size="10" fill="#ec4899" opacity="0.5">✦
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.8s" repeatCount="indefinite"/>
+  </text>
+  <text x="80" y="370" font-size="8" fill="#8b5cf6" opacity="0.4">✦
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="3.2s" repeatCount="indefinite"/>
+  </text>
+</svg>
