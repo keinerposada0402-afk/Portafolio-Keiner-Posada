@@ -988,6 +988,42 @@ figcaption span { color: var(--text-dim); font-size: .82rem; }
 .back-to-top:hover { transform: translateY(-4px); }
 
 /* ============================================
+   BOTÓN FLOTANTE PARA VER PORTAFOLIO
+============================================ */
+.portfolio-float-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 90px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gradient);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .9rem;
+    box-shadow: var(--shadow-glow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all var(--t);
+    z-index: 90;
+    text-decoration: none;
+}
+.portfolio-float-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.portfolio-float-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 60px -10px rgba(139,92,246,.6);
+}
+.btn-text { white-space: nowrap; }
+.btn-icon { font-size: 1.1rem; }
+
+/* ============================================
    ANIMACIONES DE APARICIÓN ON SCROLL
 ============================================ */
 .reveal {

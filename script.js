@@ -83,13 +83,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }, { threshold: 0.4 });
     skillFills.forEach(function (el) { skillObserver.observe(el); });
 
-    /* ----------------------------------------------------------
-       6. BOTÓN VOLVER ARRIBA
-    ---------------------------------------------------------- */
+/* ----------------------------------------------------------
+        6. BOTÓN VOLVER ARRIBA
+     ---------------------------------------------------------- */
     const backToTop = document.getElementById('backToTop');
+    const portfolioFloatBtn = document.querySelector('.portfolio-float-btn');
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 400) backToTop.classList.add('show');
-        else backToTop.classList.remove('show');
+        if (window.scrollY > 300) {
+            backToTop.classList.add('show');
+            portfolioFloatBtn.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+            portfolioFloatBtn.classList.remove('show');
+        }
     });
     backToTop.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
